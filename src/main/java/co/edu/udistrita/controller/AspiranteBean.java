@@ -30,7 +30,6 @@ public class AspiranteBean implements Serializable {
 
     public String registrar() {
         dto.setFecha_reg(LocalDate.now());
-        // Busca el programa por código en la lista
         for (ProgAcad p : listaPa) {
             if (p.getCod() == dto.getPro_acad().getCod()) {
                 dto.setPro_acad(p);
@@ -38,7 +37,7 @@ public class AspiranteBean implements Serializable {
             }
         }
         listaAs.add(dto);
-        dto = new Aspirante(); // limpia el formulario
+        dto = new Aspirante(); //aqui reinicio el formulario
         return null;
     }
 }

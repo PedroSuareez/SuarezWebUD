@@ -1,0 +1,230 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="FdomtcKFhegOtS67Dd45">
+    <mxGraphModel dx="2054" dy="1103" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="P_header" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;fontSize=13;fontColor=#000000;" value="Persona" vertex="1">
+          <mxGeometry height="230" width="240" x="30" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="P_a1" parent="P_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="- serialVersionUID : long" vertex="1">
+          <mxGeometry height="20" width="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P_a2" parent="P_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="- id_p : long" vertex="1">
+          <mxGeometry height="20" width="240" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="P_a3" parent="P_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="- nombres : String" vertex="1">
+          <mxGeometry height="20" width="240" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="P_a4" parent="P_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="- apellidos : String" vertex="1">
+          <mxGeometry height="20" width="240" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="P_a5" parent="P_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="- telefono : String" vertex="1">
+          <mxGeometry height="20" width="240" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="P_a6" parent="P_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="- correo : String" vertex="1">
+          <mxGeometry height="20" width="240" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="P_sep" parent="P_header" style="line;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="P_m1" parent="P_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="+ Persona()" vertex="1">
+          <mxGeometry height="20" width="240" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="P_m2" parent="P_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="+ getId_p() : long" vertex="1">
+          <mxGeometry height="20" width="240" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="P_m3" parent="P_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="+ setId_p(id_p: long) : void" vertex="1">
+          <mxGeometry height="20" width="240" y="198" as="geometry" />
+        </mxCell>
+        <mxCell id="A_header" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;fontSize=13;fontColor=#000000;" value="Aspirante" vertex="1">
+          <mxGeometry height="220" width="250" x="60" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="A_a1" parent="A_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="- serialVersionUID : long" vertex="1">
+          <mxGeometry height="20" width="250" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="A_a2" parent="A_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="- fecha_reg : LocalDate" vertex="1">
+          <mxGeometry height="20" width="250" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="A_a3" parent="A_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="- pro_acad : ProgAcad" vertex="1">
+          <mxGeometry height="20" width="250" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="A_sep" parent="A_header" style="line;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="250" y="92" as="geometry" />
+        </mxCell>
+        <mxCell id="A_m1" parent="A_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="+ Aspirante()" vertex="1">
+          <mxGeometry height="20" width="250" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="A_m2" parent="A_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="+ getFecha_reg() : LocalDate" vertex="1">
+          <mxGeometry height="20" width="250" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="A_m3" parent="A_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="+ setFecha_reg(f: LocalDate) : void" vertex="1">
+          <mxGeometry height="20" width="250" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="A_m4" parent="A_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="+ getPro_acad() : ProgAcad" vertex="1">
+          <mxGeometry height="20" width="250" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="A_m5" parent="A_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="+ toString() : String" vertex="1">
+          <mxGeometry height="20" width="250" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="PA_header" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;fontSize=13;fontColor=#000000;" value="ProgAcad" vertex="1">
+          <mxGeometry height="200" width="230" x="480" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="PA_a1" parent="PA_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="- serialVersionUID : long" vertex="1">
+          <mxGeometry height="20" width="230" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PA_a2" parent="PA_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="- cod : int" vertex="1">
+          <mxGeometry height="20" width="230" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PA_a3" parent="PA_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="- nombre_prog : String" vertex="1">
+          <mxGeometry height="20" width="230" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PA_sep" parent="PA_header" style="line;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="92" as="geometry" />
+        </mxCell>
+        <mxCell id="PA_m1" parent="PA_header" style="text;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="+ ProgAcad()" vertex="1">
+          <mxGeometry height="20" width="230" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="PA_m2" parent="PA_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="+ getCod() : int" vertex="1">
+          <mxGeometry height="20" width="230" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="PA_m3" parent="PA_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="+ setCod(cod: int) : void" vertex="1">
+          <mxGeometry height="20" width="230" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="PA_m4" parent="PA_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="+ getNombre_prog() : String" vertex="1">
+          <mxGeometry height="20" width="230" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="RJuioA65y0A97E5DDaxE-3" edge="1" parent="PA_header" source="PA_sep" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.691;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#000000;" target="PA_sep">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ADAO_header" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;fontSize=13;fontColor=#000000;" value="AspiranteDAO" vertex="1">
+          <mxGeometry height="80" width="250" x="20" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="ADAO_a1" parent="ADAO_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="+  lista_A : ArrayList&lt;Aspirante&gt;" vertex="1">
+          <mxGeometry height="20" width="250" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="ADAO_sep" parent="ADAO_header" style="line;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="250" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="ADAO_note" parent="ADAO_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=10;fontStyle=2;fontColor=#000000;" value="// sin métodos definidos" vertex="1">
+          <mxGeometry height="18" width="250" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="PDAO_header" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;fontSize=13;fontColor=#000000;" value="ProgAcadDAO" vertex="1">
+          <mxGeometry height="90" width="230" x="360" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="PDAO_a1" parent="PDAO_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="+  lista_P : ArrayList&lt;ProgAcad&gt;" vertex="1">
+          <mxGeometry height="20" width="230" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PDAO_sep" parent="PDAO_header" style="line;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="PDAO_m1" parent="PDAO_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;fontColor=#000000;" value="+  cargaDatos() : void" vertex="1">
+          <mxGeometry height="20" width="230" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="AB_header" parent="1" style="swimlane;fontStyle=1;align=center;startSize=44;fontSize=13;" value="AspiranteBean&#xa;" vertex="1">
+          <mxGeometry height="260" width="290" x="910" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="AB_a1" parent="AB_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;" value="- serialVersionUID : long" vertex="1">
+          <mxGeometry height="20" width="290" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="AB_a2" parent="AB_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;" value="- dto : Aspirante" vertex="1">
+          <mxGeometry height="20" width="290" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="AB_a3" parent="AB_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;" value="- listaAs : ArrayList&lt;Aspirante&gt;" vertex="1">
+          <mxGeometry height="20" width="290" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="AB_a4" parent="AB_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;" value="- listaPa : ArrayList&lt;ProgAcad&gt;" vertex="1">
+          <mxGeometry height="20" width="290" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="AB_sep" parent="AB_header" style="line;" value="" vertex="1">
+          <mxGeometry height="8" width="290" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="AB_m1" parent="AB_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;" value="+ AspiranteBean()" vertex="1">
+          <mxGeometry height="20" width="290" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="AB_m2" parent="AB_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;" value="+ getDto() : Aspirante" vertex="1">
+          <mxGeometry height="20" width="290" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="AB_m3" parent="AB_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;" value="+ setDto(dto: Aspirante) : void" vertex="1">
+          <mxGeometry height="20" width="290" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="AB_m4" parent="AB_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;" value="+ getListaAs() : ArrayList&lt;Aspirante&gt;" vertex="1">
+          <mxGeometry height="20" width="290" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="AB_m5" parent="AB_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;" value="+ getListaPa() : ArrayList&lt;ProgAcad&gt;" vertex="1">
+          <mxGeometry height="20" width="290" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="AB_m6" parent="AB_header" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;fontSize=11;" value="+ registrar() : String" vertex="1">
+          <mxGeometry height="28" width="290" y="232" as="geometry" />
+        </mxCell>
+        <mxCell id="R_herencia" edge="1" parent="1" source="A_header" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=0;endSize=14;fontColor=#000000;fontSize=10;fontStyle=0;" target="P_header" value="extends">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R_compo" edge="1" parent="1" source="A_header" style="edgeStyle=orthogonalEdgeStyle;startArrow=ERmandOne;startFill=1;endArrow=ERmandOne;endFill=0;startSize=8;endSize=8;fontColor=#000000;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="PA_header" value="pro_acad">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="490" />
+              <mxPoint x="480" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R_compo_lbl2" connectable="0" parent="R_compo" style="edgeLabel;fontSize=11;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.85" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R_dao_asp" edge="1" parent="1" source="ADAO_header" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;endSize=10;dashed=1;fontColor=#000000;fontSize=10;" value="«uses»">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="185" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R_pdao_pa" edge="1" parent="1" source="PDAO_header" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;endSize=10;dashed=1;fontColor=#000000;fontSize=10;" target="PA_header" value="«uses»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R_bean_asp" edge="1" parent="1" source="AB_header" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;endFill=0;endSize=10;fontColor=#000000;fontSize=10;startArrow=diamondThin;startFill=1;startSize=15;" value="dto / listaAs">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="300" />
+            </Array>
+            <mxPoint x="895" y="300" as="sourcePoint" />
+            <mxPoint x="220" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b6N6deg9l9zU7Hnra-cN-4" edge="1" parent="1" source="AB_header" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;endFill=0;endSize=10;fontColor=#000000;fontSize=10;startArrow=diamondThin;startFill=1;startSize=15;" target="A_header" value="dto / listaAs">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="310" />
+            </Array>
+            <mxPoint x="920" y="310" as="sourcePoint" />
+            <mxPoint x="230" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R_bean_pa" edge="1" parent="1" source="AB_header" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;endFill=0;endSize=10;fontColor=#000000;fontSize=10;startArrow=diamondThin;startFill=1;startSize=17;labelBackgroundColor=light-dark(#FFFFFF,#000033);" target="PA_header" value="listaPa">
+          <mxGeometry relative="1" x="0.0033" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="595" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R_bean_adao" edge="1" parent="1" source="AB_header" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;endSize=10;dashed=1;fontColor=#000000;fontSize=10;" target="ADAO_header" value="«uses»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1005" y="620" />
+              <mxPoint x="210" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R_bean_pdao" edge="1" parent="1" source="AB_header" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;endSize=10;dashed=1;fontColor=#000000;fontSize=10;" target="PDAO_header" value="«uses»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1150" y="650" />
+              <mxPoint x="650" y="650" />
+              <mxPoint x="650" y="805" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

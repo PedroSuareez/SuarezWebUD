@@ -1,0 +1,78 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36">
+  <diagram name="Página-1" id="xtcfAK3_q-CW-1Qq-VBN">
+    <mxGraphModel dx="1323" dy="663" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="light-dark(#FFFFFF,#000000)" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="swimlane;fontStyle=1;align=center;startSize=26;       container=1;collapsible=0;" value="Inversion" vertex="1">
+          <mxGeometry height="284" width="288" x="454" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="2" style="text;strokeColor=none;fillColor=none;align=left;       verticalAlign=top;spacingLeft=8;overflow=hidden;rotatable=0;" value="- serialVersionUID : long&#xa;- id : long&#xa;- inversion : double&#xa;- interes : double&#xa;- plazo : double" vertex="1">
+          <mxGeometry height="90" width="280" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="2" style="text;strokeColor=none;fillColor=none;align=left;       verticalAlign=top;spacingLeft=8;overflow=hidden;rotatable=0;" value="+ Inversion()&#xa;+ getId() : long&#xa;+ setId(id: long) : void&#xa;+ getInversion() : double&#xa;+ setInversion(v: double) : void&#xa;+ getInteres() : double&#xa;+ setInteres(i: double) : void&#xa;+ getPlazo() : double&#xa;+ setPlazo(p: double) : void&#xa;+ toString() : String" vertex="1">
+          <mxGeometry height="168" width="288" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="swimlane;fontStyle=1;align=center;startSize=26;       container=1;collapsible=0;" value="CDT" vertex="1">
+          <mxGeometry height="255" width="280" x="80" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="5" style="text;strokeColor=none;fillColor=none;align=left;       verticalAlign=top;spacingLeft=8;overflow=hidden;rotatable=0;" value="- serialVersionUID : long&#xa;- ganancia : double&#xa;- valorFuturo : double&#xa;- impuesto : double&#xa;- ANIO : double = 360" vertex="1">
+          <mxGeometry height="90" width="280" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="5" style="text;strokeColor=none;fillColor=none;align=left;       verticalAlign=top;spacingLeft=8;overflow=hidden;rotatable=0;" value="+ CDT()&#xa;+ calcular() : void&#xa;+ getGanancia() : double&#xa;+ setGanancia(g: double) : void&#xa;+ getValorFuturo() : double&#xa;+ setValorFuturo(v: double) : void&#xa;+ getImpuesto() : double&#xa;+ setImpuesto(i: double) : void&#xa;+ toString() : String" vertex="1">
+          <mxGeometry height="139" width="280" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="swimlane;fontStyle=1;align=center;startSize=26;       container=1;collapsible=0;" value="CDTDAO" vertex="1">
+          <mxGeometry height="80" width="280" x="80" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="8" style="text;strokeColor=none;fillColor=none;align=left;       verticalAlign=top;spacingLeft=8;overflow=hidden;rotatable=0;" value="+ lista_C : ArrayList&lt;CDT&gt;" vertex="1">
+          <mxGeometry height="30" width="280" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="8" style="text;strokeColor=none;fillColor=none;align=left;fontStyle=2;       verticalAlign=top;spacingLeft=8;overflow=hidden;rotatable=0;" value="// sin métodos definidos" vertex="1">
+          <mxGeometry height="24" width="280" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="swimlane;fontStyle=1;align=center;startSize=26;       container=1;collapsible=0;" value="CDTBean" vertex="1">
+          <mxGeometry height="260" width="300" x="659" y="459" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="11" style="text;strokeColor=none;fillColor=none;align=left;       verticalAlign=top;spacingLeft=8;overflow=hidden;rotatable=0;" value="- serialVersionUID : long&#xa;- dto : CDT&#xa;- listaCdt : ArrayList&lt;CDT&gt;" vertex="1">
+          <mxGeometry height="70" width="300" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="11" style="text;strokeColor=none;fillColor=none;align=left;       verticalAlign=top;spacingLeft=8;overflow=hidden;rotatable=0;" value="+ CDTBean()&#xa;+ getDto() : CDT&#xa;+ setDto(dto: CDT) : void&#xa;+ getListaCdt() : ArrayList&lt;CDT&gt;&#xa;+ setListaCdt(l: ArrayList&lt;CDT&gt;) : void&#xa;+ registrar() : String&#xa;+ cargarLista() : void" vertex="1">
+          <mxGeometry height="164" width="300" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="14" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=0;       endSize=12;exitX=0.5;exitY=0;exitDx=0;exitDy=0;       entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14b" connectable="0" parent="14" style="edgeLabel;html=1;align=center;verticalAlign=bottom;       resizable=0;points=[];fontStyle=2;" value="extends" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endSize=8;       dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;       entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="15b" connectable="0" parent="15" style="edgeLabel;html=1;align=center;verticalAlign=bottom;       resizable=0;points=[];fontStyle=2;" value="«uses»" vertex="1">
+          <mxGeometry relative="1" x="0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" edge="1" parent="1" source="11" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;       exitX=0;       entryX=1;entryY=0.3;entryDx=0;entryDy=0;shape=wire;dashed=1;endFill=0;startArrow=diamondThin;startFill=1;sourcePerimeterSpacing=0;startSize=14;" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="16b" connectable="0" parent="16" style="edgeLabel;html=1;align=center;verticalAlign=bottom;       resizable=0;points=[];" value="dto / listaCdt" vertex="1">
+          <mxGeometry relative="1" x="-0.2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" edge="1" parent="1" source="11" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;endSize=8;       dashed=1;       entryX=1;endFill=0;startArrow=diamondThin;startFill=1;startSize=14;" target="8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="509" y="640" />
+              <mxPoint x="509" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
